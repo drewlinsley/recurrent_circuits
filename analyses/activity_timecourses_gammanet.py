@@ -1,0 +1,5 @@
+"""Plot activity timecourses for gammanet."""
+CUDA_VISIBLE_DEVICES=5 python run_job.py --experiment=BSDS500_test_recurrence --model=BSDS_vgg_cheap_deepest_final_simple_per_timestep --no_db --ckpt=/media/data_cifs/cluttered_nist_experiments/checkpoints/BSDS_vgg_cheap_deepest_final_simple_BSDS500_combos_100_no_aux_2019_05_20_00_56_41_386546/model_1240.ckpt-1240 --placeholders --test --out_dir=bsds_portrait --train=BSDS500_test_portrait --val=BSDS500_test_portrait --val=BSDS500_test_portrait
+
+
+CUDA_VISIBLE_DEVICES=5 python run_job.py --experiment=berson_test --model=refactored_v7 --no_db --ckpt=/media/data_cifs/cluttered_nist_experiments/checkpoints/refactored_v7_star_combos_2019_05_20_18_18_02_986386/model_7700.ckpt-7700 --placeholders --test --out_dir=berson_viz --train=berson_100 --val=berson_100

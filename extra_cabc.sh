@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=6 python run_job.py --experiment=nist_3_ix2v5_45k --model=htd_fgru_deep --ckpt=/media/data_cifs/cluttered_nist_experiments/checkpoints/htd_fgru_deep_nist_3_ix2v5_45k_no_db_v3_2019_11_09_19_13_44_078273/model_20000.ckpt-20000 --no_db --test --out_dir=test_rebut_v2
+CUDA_VISIBLE_DEVICES=6 python run_job.py --experiment=nist_3_ix2v5_45k --model=htd_fgru_shallow --ckpt=/media/data_cifs/cluttered_nist_experiments/checkpoints/htd_fgru_shallow_nist_3_ix2v5_45k_no_db_v5_2019_11_09_22_50_30_269859/model_10000.ckpt-10000 --no_db --test --out_dir=test_rebut_v2
